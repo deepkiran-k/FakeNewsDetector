@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <title>FactCheck</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/img/favicon.png">
+    <title>
+CB | Fact Checker
+</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+    <link href="1.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="ui main container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <h1 class="title col-auto">FactCheck | <span class="subtitle">Automated Live Fact-Checking</span></h1>
+        </div>
+    </div>
+    <div class="ui main menu">
+        <div class="ui text container center" style="max-width: fit-content;">
+
+            <a href="./.." class="floated item" style="font-size: 25px;">
+                <img alt="FactCheck_logo" class="logo"  style="margin-right: 0px; width: 120px; height: auto;"
+                    src="636586274885410042-636295054424513355-GettyImages-649803894-1-.webp">
+            </a>
+            <a href="./home.html" class="floated item" style="font-size: 25px;">Home</a>
+            <a href="./index.html" class="floated item" style="font-size: 25px;">Fact-Check</a>
+            <a href="./articles.html" class="floated item" style="font-size: 25px;">Previous Articles</a>
+            <a href="./results.html" class="floated item" style="font-size: 25px;">Results</a>
+        </div>
+    </div>
+    <div id="main-content-container" class="main ui container">
+        
+<div class="ui fluid buttons">
+    <button class="ui blue button">Find Claims in Text</button>
+    <div class="or"></div>
+    <button class="ui button">Check a Claim</button>
+</div>
+<div id="syot" class="ui basic segment visible">
+    <div class="ui corner labeled fluid input">
+        <div class="ui corner label" component="syot">
+            <i class="search icon"></i>
+        </div>
+        <textarea placeholder="Score your own text (e.g., I had coffee with eggs this morning.)"></textarea>
+    </div>
+    <div class="results">
+        <div class="ui grid">
+            <div class="sixteen wide column score-your-own-text">
+              <!-- Score your own text results are rendered here -->
+            </div>
+        </div>
+        <div class="ui grid">
+            <div class="kb eight wide column">
+                <!-- Knowledge-base results are rendered here -->
+            </div>
+            <div class="fact-match eight wide column">
+                <!-- Fact matching results are rendered here -->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="fyot" class="ui basic segment transition hidden">
+    <div class="ui action fluid input">
+        <input type="text" placeholder="Check a claim (e.g., The U.S. population is 320 million.)">
+        <button class="ui icon button" component="fyot">
+            <i class="search icon"></i>
+        </button>
+    </div>
+    <div class="ui grid">
+        <div class="kb eight wide column">
+            <!-- Knowledge-base results are rendered here -->
+        </div>
+        <div class="fact-match eight wide column">
+            <!-- Fact matching results are rendered here -->
+        </div>
+    </div>
+</div>
+
+        <br>
+    </div>
+    <a href="https://idir.uta.edu/" target="_blank" style="display: flex; justify-content: center; align-items: center;">
+        <img alt="idir_logo" style="height: 120px; width: auto;" src="factcheckers_thumbnail_final.webp">
+    </a>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            </div>
+            <div class="ui inverted section divider"></div>
+            <img alt="FactCheck_logo" src="istockphoto-1182934020-612x612.jpg"
+                class="ui centered mini image home-link">
+            <div class="ui horizontal inverted small divided link list">
+                <a class="item email-idir" href="">
+                    
+                </a>
+                <a class="item" href="/FactCheck/terms/">Terms and Conditions</a>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+    <script src="1.js"></script>
+    
+</body>
+
+</html>
