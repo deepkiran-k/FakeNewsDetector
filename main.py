@@ -1,5 +1,5 @@
 import json
-from input import get_news_text
+from input import get_news_text, extract_text_from_url_bs4, is_url, extract_text_from_raw_input
 from llm_call import LLMNewsDetector
 from web import web_search
 
@@ -15,13 +15,18 @@ def main():
         # Step 2: Retrieve user input (either a URL or raw text)
         input_data = input("Enter a news URL or the raw news text: ").strip()
 
-        # Step 3: Extract news text from the input
-        print("Extracting text from input...")
-        news_text = get_news_text(input_data)
+        # Step 3: Determine the type of input and process accordingly
+        if is_url(input_data):
+            print("Input is identified as a URL. Extracting content...")
+            news_text = extract_text_from_url_bs4(input_data)
+        else:
+            print("Input is identified as raw text. Processing...")
+            news_text = extract_text_from_raw_input(input_data)
+
         if not news_text:
             raise ValueError("Failed to extract meaningful content from the input.")
 
-        print("News text extracted successfully.")
+        print("News text processed successfully.")
 
         # Step 4: Initialize LLMNewsDetector
         detector = LLMNewsDetector(creds['groq_api_key'])
