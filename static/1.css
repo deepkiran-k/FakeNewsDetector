@@ -1,0 +1,237 @@
+.ui.main.container .ui.header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25em;
+    text-align: center;
+}
+
+.ui.main.container .ui.header small {
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.main.container {
+    margin-top: 2em;
+    max-width: 950px;
+}
+
+.main.menu {
+    /* margin-top: 2em; */
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition: box-shadow 0.5s ease,
+    padding 0.5s ease;
+    z-index: 981 !important;
+}
+
+.main.menu .item img.logo {
+    margin-right: 1.5em;
+}
+
+.main.menu .item::before {
+    background: unset;
+}
+
+.main.menu .item {
+    border: none !important;
+}
+
+.home-link {
+    cursor: pointer;
+}
+
+.main.menu.fixed .item:first-child::after {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    content: "ClaimBuster";
+}
+
+.main.menu.fixed {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#main-content-container {
+    min-height: calc(100% - 500px);
+}
+
+.input textarea {
+    width: 100%;
+    min-height: 300px;
+}
+
+.input .ui.corner.label {
+    cursor: pointer;
+}
+
+.ui.grid {
+    margin-top: 1rem;
+}
+
+.ui.footer.segment {
+    margin: 5em 0 0;
+    padding: 5em 0;
+}
+
+#syot .ui.corner.label:hover {
+    background-image: none;
+    -webkit-box-shadow: 0 0 0 1px transparent inset,0 0 0 0 rgba(34,36,38,.15) inset;
+    box-shadow: 0 0 0 1px transparent inset,0 0 0 0 rgba(34,36,38,.15) inset;
+    color: rgba(0,0,0,.8);
+}
+
+#syot .ui.corner.label i {
+    font-size: 1.9em;
+}
+
+#syot .ui.corner.label::after {
+    border-right: 7em solid transparent;
+    border-bottom: 7em solid transparent;
+    border-right-color: inherit;
+}
+
+#syot .ui.corner.label:hover::after {
+    border-right-color: #cacbcd;
+}
+
+:not(.ui.label).color_class_1, :not(.ui.label).color_class_2, :not(.ui.label).color_class_3,
+:not(.ui.label).color_class_4, :not(.ui.label).color_class_5, :not(.ui.label).color_class_6,
+:not(.ui.label).color_class_7, :not(.ui.label).color_class_8, :not(.ui.label).color_class_9,
+:not(.ui.label).color_class_10 {
+	padding: 2px;
+    border-radius: 0.20em;
+}
+
+.color_class_1 {
+	color: #222 !important;
+	text-shadow: 0 1px 3px rgba(255, 255, 255, 0.33);
+    background: #EBF0FF !important;
+}
+
+.color_class_2 {
+	color: #222 !important;
+	text-shadow: 0 1px 3px rgba(255, 255, 255, 0.33);
+    background: #D6E0FF !important;
+}
+
+.color_class_3 {
+	color: #222 !important;
+	text-shadow: 0 1px 3px rgba(255, 255, 255, 0.33);
+    background: #C2D1FF !important;
+}
+
+.color_class_4 {
+	color: #222 !important;
+	text-shadow: 0 1px 3px rgba(255, 255, 255, 0.33);
+    background: #ADC2FF !important;
+}
+
+.color_class_5 {
+	color: #222 !important;
+	text-shadow: 0 1px 3px rgba(255, 255, 255, 0.33);
+    background: #99B2FF !important;
+}
+
+.color_class_6 {
+	color: #ffffff !important;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
+    background: #85A3FF !important;
+}
+
+.color_class_7 {
+	color: #ffffff !important;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
+    background: #7094FF !important;
+}
+
+.color_class_8 {
+	color: #ffffff !important;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
+    background: #5C85FF !important;
+}
+
+.color_class_9 {
+	color: #ffffff !important;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
+    background: #4775FF !important;
+}
+
+.color_class_10 {
+	color: #ffffff !important;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
+    background: #3366FF !important;
+}
+
+.color_class_text_1 {
+    color: #EBF0FF;
+}
+
+.color_class_text_2 {
+    color: #D6E0FF;
+}
+
+.color_class_text_3 {
+    color: #C2D1FF;
+}
+
+.color_class_text_4 {
+    color: #ADC2FF;
+}
+
+.color_class_text_5 {
+    color: #99B2FF;
+}
+
+.color_class_text_6 {
+    color: #85A3FF;
+}
+
+.color_class_text_7 {
+    color: #7094FF;
+}
+
+.color_class_text_8 {
+    color: #5C85FF;
+}
+
+.color_class_text_9 {
+    color: #4775FF;
+}
+
+.color_class_tex_10 {
+    color: #3366FF;
+}
+
+#cws-slider {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#cws-slider li.label {
+    color: black;
+}
+
+#cws-slider .track {
+    border-radius: 0;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #ebf0ff, #3366ff);
+}
+
+#cws-slider .track-fill {
+    background-color: transparent;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold; /* Bold only the main title */
+}
+
+.subtitle {
+    font-size: 0.51em; /* Adjust size relative to the main title */
+    font-weight:500; /* Prevent subtitle from being bold */
+    text-align: center;
+    color: #000000; /* Optional: Slight color difference to emphasize separation */
+}
