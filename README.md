@@ -116,7 +116,8 @@ FakeNewsDetector/
 ├── static/              # Static files (CSS, JavaScript, images)
 ├── templates/           # HTML templates
 │
-└── requirements.txt     # Python dependencies
+├── requirements.txt     # Python dependencies
+└── db_schema.sql        # Database schema for storing search results
 ```
 
 ---
