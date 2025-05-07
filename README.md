@@ -71,7 +71,12 @@ FakeNewsDetector is your go-to web-based tool to uncover the truth behind news a
      ```
 
 4. **Initialize the database**:
-   - Create a MySQL database and run the relevant schema (schema details not included).
+   - Create a MySQL database and run the relevant schema.
+   - Import the provided `db_schema.sql` file into your MySQL database:
+   ```bash
+   mysql -u root -p fakenews < db_schema.sql
+   ```
+
 
 5. **Run the application**:
    ```bash
