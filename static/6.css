@@ -1,0 +1,38 @@
+.selectedText {
+    text-decoration: underline;
+}
+
+#factCheckerPresentation {
+    height: 100%;
+    width: auto;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#factCheckerPresentation p {
+    text-align: left;
+}
+
+.intro-paragraph {
+    padding: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.highlight-me {
+    background-color: #b2eeff;
+}
+
+.label-factchecker {
+    text-align: center;
+    padding: 4px 5px 4px 5px;
+}
+
+.important-center {
+    text-align: center !important;
+}

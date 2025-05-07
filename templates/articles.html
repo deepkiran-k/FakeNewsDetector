@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FactCheck</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <title>
+FactCheck: Automated Live Fact-checking
+</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+    <link href="{{ url_for('static', filename='1.css') }}" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+<link href="{{ url_for('static', filename='2.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <div class="ui main container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <h1 class="col-auto ui header text-center" style="font-size: 40px;">FactCheck | <span class="ui tiny text">Automated Live
+                    Fact-Checking</span></h1>
+        </div>
+    </div>
+    <div class="ui main menu">
+        <div class="ui text container center" style="max-width: fit-content;">
+
+            <a href="../" class="floated item" style="font-size: 25px;">
+                <img alt="FactCheck_logo" class="logo" src="{{ url_for('static', filename='636586274885410042-636295054424513355-GettyImages-649803894-1-.webp') }}">
+
+            </a>
+            <a href="{{ url_for('home') }}" class="floated item">Home</a>
+            <a href="{{ url_for('index') }}" class="floated item">Fact-Check</a>
+            <a href="{{ url_for('articles') }}" class="floated item">Previous Articles</a>
+            <a href="{{ url_for('search') }}" class="floated item">Search History</a>
+
+        </div>
+    </div>
+    <div id="main-content-container" class="main ui container">
+        
+
+
+<link href="../static/css/publications.css" rel="stylesheet">
+
+
+<div>
+    <ol>	
+        <li>
+		<u>Rishabh Mediratta</u>, <u>Jacob Devasier</u>, and <b>Chengkai Li</b>. 
+		<span>Enabling Automated Fact Checking of Voting Related Claims
+			Using Frame Semantic Parsing and Semantic Search.</span> 
+			In <i>Proceedings of the Undergraduate Consortium at the 30th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD-UC)</i>, Barcelona, Spain, August 25-29, 2024.
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2024/claimlens-kdd24-UC-mediratta.pdf">PDF</a> 
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2024/claimlens-kdd24-UC-mediratta-poster.pdf">poster</a> 
+		<a class="button online_demo" target="_new" href="https://idir.uta.edu/claimlens/">ClaimLens</a>
+        </li>
+        
+        <li>
+            <u>Jacob Devasier</u>, <u>Rishabh Mediratta</u>, <u>Phuong Anh Le</u>, <u>David Huang</u>, and <b>Chengkai Li</b>. 
+            <span>ClaimLens: Automated, Explainable Fact-Checking on Voting Claims Using Frame-Semantics.</span> 
+            In <i>Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>, pages 311-319, Maimi, Florida, November 12-16, 2024.
+                <a class="button PDF" target="_new" href="https://aclanthology.org/2024.emnlp-demo.32/">ACL Anthology</a> 
+                <a class="button online_demo" target="_new" href="https://idir.uta.edu/claimlens/">ClaimLens</a>
+        </li>
+    
+        <li>
+            <u>Zeyu Zhang</u>, <u>Zhengyuan Zhu</u>, <u>Haiqi Zhang</u>, and <b>Chengkai Li</b>. 
+            <span>Exploring Behavioral Tendencies on Social Media: A Perspective Through Claim Check-Worthiness.</span> 
+            In <i>Proceedings of the 16th International Conference on Advances in Social Networks Analysis and Mining (ASONAM)</i>, Rende(CS), Calabria, Italy, September 2-5, 2024. To appear.
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2024/behavioraltendencies-asonam24-zhang.pdf" type="application/pdf">PDF</a>
+            <a class="button misc" target="_new" href="https://zenodo.org/records/11081026">dataset</a>
+        </li>
+        
+        <li>
+            <u>Haiqi Zhang</u>, <u>Zhengyuan Zhu</u>, <u>Zeyu Zhang</u>, <u>Jacob Devasier</u>, and <b>Chengkai Li</b>. 
+            <span>Granular Analysis of Social Media Users’ Truthfulness Stances Toward Climate Change Factual Claims.</span> 
+            In <i>Proceedings of the Workshop of Natural language Processing meets Climate Change (ClimateNLP) </i>, Bangkok, Thailand, August 11-16, 2024. To appear. (Co-located with ACL 2024)
+            <a class="button PDF" target="_new" href="https://aclanthology.org/2024.climatenlp-1.18/" type="application/pdf">ACL Anthology</a>
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2024/nlp4climate-acl2024-zhang-poster.pdf" type="application/pdf">poster</a>
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2024/nlp4climate-acl2024-zhang-slides.pdf" type="application/pdf">slides</a>
+        </li>
+    
+        <li>
+            <u>Kevin Meng</u>^, <u>Damian Jimenez</u>^, <u>Jacob Devasier</u>, <u>Sai Sandeep Naraparaju</u>, <u>Fatma Arslan</u>, <u>Daniel Obembe</u> and <b>Chengkai Li</b>. 
+            <span>Gradient-Based Adversarial Training on Transformer Networks for Detecting Check-Worthy Factual Claims.</span> 
+            In <i>ACM Transactions on Intelligent Systems and Technology (TIST)</i>, 15(6): 120:6-1:25, August 2024.
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2024/adversarial-claimspotting-tist24-meng.pdf" type="application/pdf">PDF</a>
+            <a class="button online_demo" target="_new" href="http://idir.uta.edu/FactCheck/">FactCheck</a>
+            <a class="button online_demo" target="_new" href="https://idir.uta.edu/FactCheck/api/">API</a>
+            <a class="button misc" target="_new" href="https://github.com/utaresearch/FactCheck-spotter">codebase</a>
+            <a class="button misc" target="_new" href="https://zenodo.org/records/3836810#.XsgJohNKgb0">dataset</a>
+                <a class="button misc" target="_new" href="https://idir.uta.edu/classifyfact_survey/">data annotation</a>
+                <a class="button video" target="_new" href="https://vimeo.com/222212306">video 1</a>
+            <a class="button video" target="_new" href="https://vimeo.com/188729744">video 2</a>
+        </li>
+    
+        <li>
+            <u>Jacob Devasier</u>, <u>Yogesh Gurjar</u>, and <b>Chengkai Li</b>. 
+            <span>Robust Frame-Semantic Models with Lexical Unit Trees and Negative Samples.</span> 
+            In <i>Proceedings of the 62nd Annual Meeting of Association of Computational Linguistics (ACL)</i>, Bangkok, Thailand, August 11-16, 2024.
+            <a class="button PDF" target="_new" href="https://aclanthology.org/2024.acl-long.374/" type="application/pdf">ACL Anthology</a>
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2024/fsp-acl24-devasier-poster.pdf">poster</a> 
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2024/fsp-acl24-devasier-slides.pdf">slides</a> 
+            <a class="button misc" target="_new" href="https://github.com/idirlab/frame">codebase</a> 
+            <a class="button video" target="_new" href="https://vimeo.com/1019480141">talk</a> 
+        </li>
+
+        <li>
+            <u>Zeyu Zhang</u>, <u>Zhengyuan Zhu</u>, <u>Haiqi Zhang</u>, <u>Foram Patel</u>, <u>Josue Caraballo</u>, <u>Patrick Hennecke</u>, and <b>Chengkai Li</b>. 
+            <span>Wildfire: A Twitter Social Sensing Platform for Layperson.</span> 
+            In <i>Proceedings of the 17th ACM International Conference on Web Search and Data Mining (WSDM),</i> pages 1106-1109, Mérida, Yucatán, Mexico, March 4-8, 2024.	Demonstration description. 	
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2024/wildfire-wsdm24-zhang.pdf" type="application/pdf">PDF</a>
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2024/wildfire-wsdm2024-zhang-poster.pdf">poster</a> 
+            <a class="button online_demo" target="_new" href="https://idir.uta.edu/wildfire">Wildfire online demo</a> 
+            <a class="button video" target="_new" href="https://vimeo.com/868595619">video</a> 
+        </li>
+        
+		<li>
+			<u>Zhengyuan Zhu</u>, <u>Zeyu Zhang</u>, <u>Foram Patel</u>, <b>Chengkai Li</b>.
+			<span>Detecting Stance of Tweets Toward Truthfulness of Factual Claims.</span>
+			In <i>Proceedings of the 2022 Computation+Journalism Symposium</i>, 4 pages, New York City, New York, Jun 2022. 
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2022/truthfulnessstancedetection-c%2Bj2022-zhu.pdf" type="application/pdf">PDF</a>
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2022/stancedetection-scrf2022-zhu-poster.pdf" type="application/pdf">poster</a>
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2022/stancedetection-c%2Bj2022-zhu-talk.pdf" type="application/pdf">slides</a>
+		
+		</li>
+
+		<li>
+			<u>Zhengyuan Zhu</u>, <u>Kevin Meng</u>, <u>Josue Caraballo</u>, <u>Israa Jaradat</u>, <u>Xiao Shi</u>, <u>Zeyu Zhang</u>, 
+			<u>Farahnaz Akrami</u>, <u>Haojin Liao</u>, <u>Fatma Arslan</u>, <u>Damian Jimenez</u>, <u>Mohammed Samiul Saeef</u>, 
+			<u>Paras Pathak</u>, <b>Chengkai Li</b>.
+			<span>A Dashboard for Mitigating the COVID-19 Misinfodemic.</span>
+			In <i>Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics (EACL): System Demonstrations,</i> pages 99–105, April 19-23, 2021.
+			<a class="button PDF" target="_new" href=" https://aclanthology.org/2021.eacl-demos.12/">ACL Anthology</a>
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2021/covid19dashboard-csc2021-zhu-poster.pdf">poster</a>
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs_private/blob/master/presentations/paper%20presentations/2021/covid19dashboard-eacl2021-zhu-talk.pdf">slides</a>
+			<a class="button misc" target="_new" href="https://github.com/idirlab/covid19">codebase</a>
+			<a class="button misc" target="_new" href="https://github.com/idirlab/covid19data">dataset</a>
+			<a class="button video" target="_new" href="https://vimeo.com/438102761">video</a>
+		</li>
+
+		<li>
+			<u>Fatma Arslan</u>, Naeemul Hassan, <b>Chengkai Li</b>, and Mark Tremayne. 
+			<span>A Benchmark Dataset of Check-worthy Factual Claims.</span>
+			In <i>Proceedings of the International AAAI Conference on Web and Social Media (ICWSM),</i> June 2020.
+			<a class="button PDF" target="_new" href="https://aclanthology.org/2020.lrec-1.306/">ACL Anthology</a>
+			<a class="button misc" target="_new" href="https://zenodo.org/record/3836810#.XsgJohNKgb0">dataset</a> 
+			<a class="button misc" target="_new" href="https://idir.uta.edu/classifyfact_survey/">data annotation</a>
+			<a class="button video" target="_new" href="https://www.youtube.com/watch?v=iw5PO_PlJfo&list=PLfNOQlmqSceVLXrBkjxLzBb2wfalJ4iJu&index=81">talk</a>
+		</li>
+
+		<li>
+			<u>Fatma Arslan</u>, <u>Josue Caraballo</u>, <u>Damian Jimenez</u>, and <b>Chengkai Li</b>. 	
+			<span>Modeling Factual Claims with Semantic Frames.</span>
+			In <i>Proceedings of the Twelfth International Conference on Language Resources and Evaluation (LREC)</i>, Marseille, France, May 11-16, 2020, pages 2511-2520
+			<a class="button PDF" target="_new" href="https://aclanthology.org/2020.lrec-1.306/">ACL Anthology</a>  
+			<a class="button online_demo" target="_new" href="https://idir.uta.edu/frameannotator/">Frame Annotator</a>
+			<a class="button misc" target="_new" href="https://zenodo.org/record/3710507#.XsgJMxNKgb1">dataset</a> 
+		</li>
+
+		<li>
+			<u>Sarthak Majithia</u>, <u>Fatma Arslan</u>, <u>Sumeet Lubal</u>, <u>Damian Jimenez</u>, <u>Priyank Arora</u>, <u>Josue Caraballo</u>, and <b>Chengkai Li</b>.
+			<span>ClaimPortal: Integrated Monitoring, Searching, Checking, and Analytics of Factual Claims on Twitter.</span> 
+			In <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL): System Demonstrations</i>, pages 153-158, Florence, Italy, July 2019.
+			<a class="button PDF" target="_new" href="https://aclanthology.org/P19-3026/">ACL Anthology</a> 
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2019/claimportal-acl19demo-majithia-poster.pdf">poster</a> 
+			<a class="button online_demo" target="_new" href="http://idir.uta.edu/claimportal">ClaimPortal online demo</a> 
+			<a class="button video" target="_new" href="https://vimeo.com/329947070">video</a> 
+		</li>
+
+		<li>
+			<u>Fatma Arslan</u>, <u>Damian Jimenez</u>, <u>Josue Caraballo</u>, <u>Gensheng Zhang</u>, and <b>Chengkai Li</b>. 
+			<span>Modeling Factual Claims by Frames.</span> 
+			In <i>Proceedings of the 2019 Computation+Journalism Symposium</i>, 5 pages, Miami, Florida, February 2019. 
+			 <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2019/modelingclaims-cj19-arslan.pdf">PDF</a> 
+		 	<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2019/modelingclaims-cj19-arslan-poster.pdf">poster</a> 
+		</li>
+
+		<li>
+			Bill Adair, <b>Chengkai Li</b>, Jun Yang, and Cong Yu. 
+			<span>Automated Pop-Up Fact-Checking: Challenges & Progress.</span> 
+			In <i>Proceedings of the 2019 Computation+Journalism Symposium</i>, 5 pages, Miami, Florida, February 2019. 
+		 	<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2019/popupfactcheck-cj19-adair.pdf">PDF</a> 
+		</li>
+
+		<li>
+			Bill Adair, Mark Stencel, Cathy Clabby, and <b>Chengkai Li</b>. 
+			<span>The Human Touch in Automated Fact-Checking.</span> 
+			In <i>Proceedings of the 2019 Computation+Journalism Symposium</i>, 5 pages, Miami, Florida, February 2019. 
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2019/humantouch-cj19-adair.pdf">PDF</a> 
+		</li>
+
+		<li>
+			<u>Damian Jimenez</u> and <b>Chengkai Li</b>. 
+			<span>An Empirical Study on Identifying Sentences with Salient Factual Statements.</span> 
+			In <i>Proceedings of the 2018 International Joint Conference on Neural Networks (IJCNN),</i> 8 pages, Rio de Janeiro, Brazil, July 2018. 
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2018/claimspotter-ijcnn18-jimenez.pdf">PDF</a> 
+			<a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2018/claimspotter-ijcnn18-jimenez-poster.pdf">poster</a> 
+			<a class="button online_demo" target="_new" href="http://idir.uta.edu/FactCheck/">FactCheck</a>
+			<a class="button online_demo" target="_new" href="https://idir.uta.edu/FactCheck/api/">API</a>
+			<a class="button misc" target="_new" href="https://github.com/utaresearch/FactCheck-spotter">codebase</a>
+			<a class="button misc" target="_new" href="https://zenodo.org/records/3836810#.XsgJohNKgb0">dataset</a>
+			<a class="button misc" target="_new" href="https://idir.uta.edu/classifyfact_survey/">data annotation</a>
+			<a class="button video" target="_new" href="https://vimeo.com/222212306">video 1</a>
+			<a class="button video" target="_new" href="https://vimeo.com/188729744">video 2</a>	
+		</li>
+        <li>
+            Bill Adair, <b>Chengkai Li</b>, Jun Yang, and Cong Yu. <span>Progress Toward “the Holy Grail”: The Continued Quest to Automate Fact-Checking.</span> 
+            In <i>Proceedings of the 2017 Computation+Journalism Symposium,</i> 5 pages, Evanston, Illinois, October 2017. 
+                <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2017/factchecking-cj17-adair.pdf">PDF</a>
+        </li>
+        <li>
+            <u>Naeemul Hassan</u>, <u>Gensheng Zhang</u>, <u>Fatma Arslan</u>, <u>Josue Caraballo</u>, <u>Damian Jimenez</u>, <u>Siddhant Gawsane</u>, <u>Shohedul Hasan</u>, <u>Minumol Joseph</u>, <u>Aaditya Kulkarni</u>, <u>Anil Kumar Nayak</u>, <u>Vikas Sable</u>, <b>Chengkai Li</b>, and Mark Tremayne. <span>FactCheck:The First-ever End-to-end Fact-checking System.</span> 
+            In <i>Proceedings of the VLDB Endowment (PVLDB),</i> 10(12): 1945-1948, August 2017. Demonstration description. (acceptance rate 35/115=30.4%) 
+                <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2017/FactCheck-vldb17demo-hassan.pdf">PDF</a> 
+                <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2017/FactCheck-vldb17demo-hassan-poster.pdf">poster</a>
+                <a class="button online_demo" target="_new" href="http://idir.uta.edu/FactCheck/">FactCheck</a>
+                <a class="button online_demo" target="_new" href="https://idir.uta.edu/FactCheck/api/">API</a>
+                <a class="button misc" target="_new" href="https://github.com/utaresearch/FactCheck-spotter">codebase</a>
+                <a class="button misc" target="_new" href="https://zenodo.org/records/3836810#.XsgJohNKgb0">dataset</a>
+                    <a class="button misc" target="_new" href="https://idir.uta.edu/classifyfact_survey/">data annotation</a>
+                    <a class="button video" target="_new" href="https://vimeo.com/222212306">video 1</a>
+                <a class="button video" target="_new" href="https://vimeo.com/188729744">video 2</a>
+        </li>
+
+        <li>
+            <u>Naeemul Hassan</u>, <u>Fatma Arslan</u>, <b>Chengkai Li</b>, and Mark Tremayne. 
+            <span>Toward Automated Fact-Checking: Detecting Check-worthy Factual Claims by FactCheck.</span> 
+            In <i>Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD),</i> pages 1803-1812, Halifax, Nova Scotia, Canada, August 2017. (Applied Data Science track, full paper, poster presentation, acceptance rate 85/396=21.5%) 
+                <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2017/FactCheck-kdd17-hassan.pdf">PDF</a> 
+                <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2017/FactCheck-kdd17-hassan-poster.pdf">poster</a>
+                <a class="button online_demo" target="_new" href="http://idir.uta.edu/FactCheck/">FactCheck</a>
+                <a class="button online_demo" target="_new" href="https://idir.uta.edu/FactCheck/api/">API</a>
+                <a class="button misc" target="_new" href="https://github.com/utaresearch/FactCheck-spotter">codebase</a>
+                <a class="button misc" target="_new" href="https://zenodo.org/records/3836810#.XsgJohNKgb0">dataset</a>
+                    <a class="button misc" target="_new" href="https://idir.uta.edu/classifyfact_survey/">data annotation</a>
+                    <a class="button video" target="_new" href="https://vimeo.com/222212306">video 1</a>
+                <a class="button video" target="_new" href="https://vimeo.com/188729744">video 2</a>
+        </li>
+
+
+        <li>
+            <u>Naeemul Hassan</u>, Mark Tremayne, <u>Fatma Arslan</u>, and <b>Chengkai Li</b>. <span>Comparing Automated Factual Claim Detection Against Judgments of Journalism Organizations.</span> 
+            In <i>Proceedings of the 2016 Computation+Journalism Symposium,</i> 5 pages, Stanford, California, USA, September 2016. 
+                <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2016/FactCheck-cj16-hassan.pdf">PDF</a> 
+                <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/presentations/paper%20presentations/2016/FactCheck-cj16-li-slides.pdf">slides</a>
+        </li>
+
+        <li>
+            <u>Naeemul Hassan</u>, <b>Chengkai Li</b>, and Mark Tremayne. 
+            <span>Detecting Check-worthy Factual Claims in Presidential Debates.</span> 
+            In <i>Proceedings of the 24th ACM International Conference on Information and Knowledge Management (CIKM),</i> pages 1835-1838, Melbourne, Australia, October 2015. (KM track short Paper, full paper acceptance rate 87/484=18.0%, short paper acceptance rate 36/484=7.4%) 
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2015/FactCheck-cikm15-hassan.pdf">PDF</a>
+        </li>
+
+        <li>
+            <u>Naeemul Hassan</u>, Bill Adair, James Hamilton, <b>Chengkai Li</b>, Mark Tremayne, Jun Yang and Cong Yu. <span>The Quest to Automate Fact-Checking.</span> 
+            In <i>Proceedings of the 2015 Computation+Journalism Symposium,</i> 5 pages, New York City, USA, October 2015.
+            <a class="button PDF" target="_new" href="https://github.com/idirlab/idirpubs/blob/main/publications/2015/FactCheck-cj15-hassan.pdf">PDF</a>
+        </li>
+
+    </ol>
+</div>
+
+        <br>
+        <br>
+        <br>
+        <div class="row d-flex align-items-center justify-content-center">
+            <a class="col-auto" target="_blank" alt="idir.uta.edu" href="https://idir.uta.edu/">
+                <img alt="idir_logo" src="{{ url_for('static', filename='factcheckers_thumbnail_final.webp') }}">
+
+            </a>
+        </div>
+    </div>
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            <div class="ui stackable inverted divided grid">
+                
+            </div>
+            <div class="ui inverted section divider"></div>
+            <img alt="FactCheck_logo" src="{{ url_for('static', filename='istockphoto-1182934020-612x612.jpg') }}">
+
+            <div class="ui horizontal inverted small divided link list">
+                <a class="item email-idir" href="">
+                
+                </a>
+                <a class="item" href="/FactCheck/terms/">Terms and Conditions</a>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+    <script src="1.js"></script>
+    
+</body>
+
+</html>
