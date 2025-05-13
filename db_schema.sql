@@ -1,5 +1,5 @@
 -- Database: `fakenews`
-
+CREATE DATABASE fakenews;
 -- --------------------------------------------------------
 
 -- Table structure for table `search_results`
